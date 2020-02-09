@@ -1,0 +1,2711 @@
+2020-02-04 09:45:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE 
+NOME[*] VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30),
+CFU INT,
+ "; SQL statement:
+CREATE TABLE Studente 
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30),
+CFU INT,
+  [42000-200]
+2020-02-04 09:46:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30),
+CFU INT,
+)[*]"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30),
+CFU INT,
+) [42001-200]
+2020-02-04 09:46:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30) NOT NULL PRIMARY KEY,
+CFU INT,
+)[*]"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30) NOT NULL PRIMARY KEY,
+CFU INT,
+) [42001-200]
+2020-02-04 09:47:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30) NOT NULL PRIMARY KEY,,[*]
+CFU INT,
+)"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30) NOT NULL PRIMARY KEY,,
+CFU INT,
+) [42001-200]
+2020-02-04 09:47:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30) NOT NULL PRIMARY KEY,,[*]
+CFU INT,
+)"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30) NOT NULL PRIMARY KEY,,
+CFU INT,
+) [42001-200]
+2020-02-04 09:47:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30) NOT NULL PRIMARY KEY,,[*]
+CFU INT,
+)"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30) NOT NULL PRIMARY KEY,,
+CFU INT,
+) [42001-200]
+2020-02-04 09:47:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30) NOT NULL PRIMARY KEY,,[*]
+CFU INT
+)"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30) NOT NULL PRIMARY KEY,,
+CFU INT
+) [42001-200]
+2020-02-04 09:47:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30) NOT NULL PRIMARY KEY,,[*]
+CFU INT
+)"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30) NOT NULL PRIMARY KEY,,
+CFU INT
+) [42001-200]
+2020-02-04 09:47:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30) NOT NULL PRIMARY KEY,,[*]
+CFU INT
+)"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30) NOT NULL PRIMARY KEY,,
+CFU INT
+) [42001-200]
+2020-02-04 09:47:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30) NOT NULL PRIMARY KEY,,[*]
+CFU INT
+)"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30) NOT NULL PRIMARY KEY,,
+CFU INT
+) [42001-200]
+2020-02-04 09:47:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE(
+NOME VARCHAR(30),
+COGNOME VARCHAR(30),
+MATRICOLA VARCHAR(30) NOT NULL PRIMARY KEY,,[*]
+CFU INT
+)"; expected "identifier"; SQL statement:
+CREATE TABLE Studente(
+nome VARCHAR(30),
+cognome VARCHAR(30),
+matricola VARCHAR(30) NOT NULL PRIMARY KEY,,
+CFU INT
+) [42001-200]
+2020-02-04 10:02:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DOCENTE(
+TEMA VARCHAR(50) NOT NULL PRIMARY KEY
+TIPO[*] ENUM('COMPILATIVO', 'ATTIVITAPROGETTUALE')
+ASSEGNATO BOOLEAN,
+INSEGNAMENTO VARCHAR(50)
+)"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE Docente(
+tema VARCHAR(50) NOT NULL PRIMARY KEY
+tipo ENUM('COMPILATIVO', 'ATTIVITAPROGETTUALE')
+assegnato BOOLEAN,
+insegnamento VARCHAR(50)
+) [42001-200]
+2020-02-04 10:03:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DOCENTE(
+TEMA VARCHAR(50) NOT NULL PRIMARY KEY,
+TIPO ENUM('COMPILATIVO', 'ATTIVITAPROGETTUALE'),
+ASSEGNATO BOOLEAN,NOT[*] NULL,
+INSEGNAMENTO VARCHAR(50) NOT NULL
+)"; expected "identifier"; SQL statement:
+CREATE TABLE Docente(
+tema VARCHAR(50) NOT NULL PRIMARY KEY,
+tipo ENUM('COMPILATIVO', 'ATTIVITAPROGETTUALE'),
+assegnato BOOLEAN,NOT NULL,
+insegnamento VARCHAR(50) NOT NULL
+) [42001-200]
+2020-02-04 10:04:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCENTE" already exists; SQL statement:
+CREATE TABLE Docente(
+tema VARCHAR(100) NOT NULL PRIMARY KEY,
+tipo ENUM('COMPILATIVO', 'ATTIVITAPROGETTUALE'),
+assegnato BOOLEAN NOT NULL,
+insegnamento VARCHAR(100) NOT NULL
+) [42101-200]
+2020-02-04 10:16:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: "DOCENTE"; SQL statement:
+CREATE TABLE Elaborato(
+tema VARCHAR(100) NOT NULL PRIMARY KEY,
+tipo ENUM('COMPILATIVO', 'ATTIVITAPROGETTUALE'),
+assegnato BOOLEAN NOT NULL,
+insegnamento VARCHAR(100) NOT NULL,
+docente DOCENTE 
+) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:19:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ELABORATO" already exists; SQL statement:
+CREATE TABLE Elaborato(
+tema VARCHAR(100) NOT NULL PRIMARY KEY,
+tipo ENUM('COMPILATIVO', 'ATTIVITAPROGETTUALE'),
+assegnato BOOLEAN NOT NULL,
+insegnamento VARCHAR(100) NOT NULL,
+FOREIGN KEY(docente) REFERENCES DOCENTE(NOME,COGNOME,ID,ELABORATIASSEGNATI)
+) [42101-200]
+2020-02-04 10:24:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+ALTER TABLE ELABORATO ADD CONSTRAINT  DOCENTE FOREIGN KEY(docente) REFERENCES DOCENTE(NOME,COGNOME,ID,ELABORATIASSEGNATI) [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:234)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:33:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "INSEGNEMANETO" not found; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Tema,Insegnemaneto,docente) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:115)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:123)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:33:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "INSEGNEMANETO" not found; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Tema,Insegnemaneto,docente) [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:115)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:123)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:33:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Tema,Insegnamento,docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:34:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Tema,Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:34:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Tema,Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:34:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Tema,Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:34:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Tema,Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:34:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Tema,Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:34:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Tema,Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:34:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:34:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:35:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:35:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 10:35:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE ELABORATO UPDATE[*] PRIMARY KEY (INSEGNAMENTO,DOCENTE)"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+ALTER TABLE ELABORATO UPDATE PRIMARY KEY (Insegnamento,Docente) [42001-200]
+2020-02-04 10:37:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Attempt to define a second primary key; SQL statement:
+ALTER TABLE ELABORATO ADD PRIMARY KEY (Insegnamento,Docente) [90017-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:129)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 11:36:23 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: "UNSIGNED"; SQL statement:
+CREATE TABLE AssegnazioneRichiesta(
+PrioritaSpecificate UNSIGNED INT NOT NULL,
+FOREIGN KEY (ELABORATO) REFERENCES  ELABORATO(TEMA),
+codice INT NOT NULL,
+stato ENUM('ACCETTATA', 'RIFIUTATA', 'INATTESA'),
+FOREIGN KEY (STUDENTE) REFERENCES STUDENTE(MATRICOLA),
+
+CONSTRAINT IDRICHIESTA PRIMARI KEY (CODICE,PRIORITASPECIFICATE)
+
+) [50004-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5971)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5697)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-04 11:39:11 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ASSEGNAZIONERICHIESTA(
+PRIORITASPECIFICATE  INT [[*]UNSIGNED] NOT NULL,
+FOREIGN KEY (ELABORATO) REFERENCES  ELABORATO(TEMA),
+CODICE INT NOT NULL,
+STATO ENUM('ACCETTATA', 'RIFIUTATA', 'INATTESA'),
+FOREIGN KEY (STUDENTE) REFERENCES STUDENTE(MATRICOLA),
+
+CONSTRAINT IDRICHIESTA PRIMARI KEY (CODICE,PRIORITASPECIFICATE)
+
+)"; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE AssegnazioneRichiesta(
+PrioritaSpecificate  INT [UNSIGNED] NOT NULL,
+FOREIGN KEY (ELABORATO) REFERENCES  ELABORATO(TEMA),
+codice INT NOT NULL,
+stato ENUM('ACCETTATA', 'RIFIUTATA', 'INATTESA'),
+FOREIGN KEY (STUDENTE) REFERENCES STUDENTE(MATRICOLA),
+
+CONSTRAINT IDRICHIESTA PRIMARI KEY (CODICE,PRIORITASPECIFICATE)
+
+) [42001-200]
+2020-02-04 11:40:22 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ASSEGNAZIONERICHIESTA(
+PRIORITASPECIFICATE  INT [[*]UNSIGNED] NOT NULL,
+ELABORATO VARCHAR(100) NOT NULL,
+FOREIGN KEY (ELABORATO) REFERENCES  ELABORATO(TEMA),
+CODICE INT NOT NULL,
+STATO ENUM('ACCETTATA', 'RIFIUTATA', 'INATTESA'),
+STUDENTE VARCHAR(100) NOT NULL,
+FOREIGN KEY (STUDENTE) REFERENCES STUDENTE(MATRICOLA),
+
+CONSTRAINT IDRICHIESTA PRIMARI KEY (CODICE,PRIORITASPECIFICATE)
+
+)"; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE AssegnazioneRichiesta(
+PrioritaSpecificate  INT [UNSIGNED] NOT NULL,
+ELABORATO VARCHAR(100) NOT NULL,
+FOREIGN KEY (ELABORATO) REFERENCES  ELABORATO(TEMA),
+codice INT NOT NULL,
+stato ENUM('ACCETTATA', 'RIFIUTATA', 'INATTESA'),
+STUDENTE VARCHAR(100) NOT NULL,
+FOREIGN KEY (STUDENTE) REFERENCES STUDENTE(MATRICOLA),
+
+CONSTRAINT IDRICHIESTA PRIMARI KEY (CODICE,PRIORITASPECIFICATE)
+
+) [42001-200]
+2020-02-04 11:41:29 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ASSEGNAZIONERICHIESTA(
+PRIORITASPECIFICATE  INT UNSIGNED NOT NULL,
+ELABORATO VARCHAR(100) NOT NULL,
+FOREIGN KEY (ELABORATO) REFERENCES  ELABORATO(TEMA),
+CODICE INT NOT NULL,
+STATO ENUM('ACCETTATA', 'RIFIUTATA', 'INATTESA'),
+STUDENTE VARCHAR(100) NOT NULL,
+FOREIGN KEY (STUDENTE) REFERENCES STUDENTE(MATRICOLA),
+
+CONSTRAINT IDRICHIESTA PRIMARI[*] KEY (CODICE,PRIORITASPECIFICATE)
+
+)"; expected "., COMMENT, PRIMARY, INDEX, KEY, CHECK, UNIQUE, FOREIGN"; SQL statement:
+CREATE TABLE AssegnazioneRichiesta(
+PrioritaSpecificate  INT UNSIGNED NOT NULL,
+ELABORATO VARCHAR(100) NOT NULL,
+FOREIGN KEY (ELABORATO) REFERENCES  ELABORATO(TEMA),
+codice INT NOT NULL,
+stato ENUM('ACCETTATA', 'RIFIUTATA', 'INATTESA'),
+STUDENTE VARCHAR(100) NOT NULL,
+FOREIGN KEY (STUDENTE) REFERENCES STUDENTE(MATRICOLA),
+
+CONSTRAINT IDRICHIESTA PRIMARI KEY (CODICE,PRIORITASPECIFICATE)
+
+) [42001-200]
+2020-02-06 13:37:41 database: wrong user or password; user: "ADMIN"
+org.h2.message.DbException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at main.InizializzazioneDB.main(InizializzazioneDB.java:13)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 16 more
+2020-02-06 13:39:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE( 
+  NOME VARCHAR(100) NOT NULL 
+  COGNOME[*] VARCHAR(100) NOT NULL 
+  MATRICOLA VARCHAR(100) NOT NULL,
+  CFU INT NOT NULL,
+  PRIMARY KEY(""Matricola"")
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE Studente( 
+  Nome VARCHAR(100) NOT NULL 
+  Cognome VARCHAR(100) NOT NULL 
+  Matricola VARCHAR(100) NOT NULL,
+  CFU INT NOT NULL,
+  PRIMARY KEY("Matricola")
+); [42001-200]
+2020-02-06 14:26:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE( 
+  NOME VARCHAR(100) NOT NULL 
+  COGNOME[*] VARCHAR(100) NOT NULL 
+  MATRICOLA VARCHAR(100) NOT NULL,
+  CFU INT NOT NULL,
+  PRIMARY KEY(""Matricola"")
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE Studente( 
+  Nome VARCHAR(100) NOT NULL 
+  Cognome VARCHAR(100) NOT NULL 
+  Matricola VARCHAR(100) NOT NULL,
+  CFU INT NOT NULL,
+  PRIMARY KEY("Matricola")
+); [42001-200]
+2020-02-06 14:26:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE( 
+  NOME VARCHAR(100) NOT NULL 
+  COGNOME[*] VARCHAR(100) NOT NULL 
+  MATRICOLA VARCHAR(100) NOT NULL,
+  CFU INT NOT NULL,
+  PRIMARY KEY(""Matricola"")
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE Studente( 
+  Nome VARCHAR(100) NOT NULL 
+  Cognome VARCHAR(100) NOT NULL 
+  Matricola VARCHAR(100) NOT NULL,
+  CFU INT NOT NULL,
+  PRIMARY KEY("Matricola")
+); [42001-200]
+2020-02-06 16:09:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE( 
+  NOME VARCHAR(100) NOT NULL 
+  COGNOME[*] VARCHAR(100) NOT NULL 
+  MATRICOLA VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL 
+  PREF2 VARCHAR(100) NOT NULL 
+  PREF3 VARCHAR(100) NOT NULL 
+  CFU INT NOT NULL,
+  PRIMARY KEY(""Matricola"")
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE Studente( 
+  Nome VARCHAR(100) NOT NULL 
+  Cognome VARCHAR(100) NOT NULL 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL 
+  PREF2 VARCHAR(100) NOT NULL 
+  PREF3 VARCHAR(100) NOT NULL 
+  CFU INT NOT NULL,
+  PRIMARY KEY("Matricola")
+); [42001-200]
+2020-02-06 16:10:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE( 
+  NOME VARCHAR(100) NOT NULL 
+  COGNOME[*] VARCHAR(100) NOT NULL 
+  MATRICOLA VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL 
+  PREF2 VARCHAR(100) NOT NULL 
+  PREF3 VARCHAR(100) NOT NULL 
+  CFU INT NOT NULL,
+  PRIMARY KEY(""Matricola"")
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL 
+  Cognome VARCHAR(100) NOT NULL 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL 
+  PREF2 VARCHAR(100) NOT NULL 
+  PREF3 VARCHAR(100) NOT NULL 
+  CFU INT NOT NULL,
+  PRIMARY KEY("Matricola")
+); [42001-200]
+2020-02-06 16:11:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "Matricola" not found; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY("Matricola")
+); [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:115)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:123)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:83)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at main.InizializzazioneDB.main(InizializzazioneDB.java:62)
+2020-02-06 16:11:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE( 
+  NOME VARCHAR(100) NOT NULL, 
+  COGNOME VARCHAR(100) NOT NULL, 
+  MATRICOLA VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(""Matricola""),
+)[*];"; expected "identifier"; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY("Matricola"),
+); [42001-200]
+2020-02-06 16:12:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE( 
+  NOME VARCHAR(100) NOT NULL, 
+  COGNOME VARCHAR(100) NOT NULL, 
+  MATRICOLA VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(MATRICOLA),
+)[*];"; expected "identifier"; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola),
+); [42001-200]
+2020-02-06 16:12:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE STUDENTE( 
+  NOME VARCHAR(100) NOT NULL, 
+  COGNOME VARCHAR(100) NOT NULL, 
+  MATRICOLA VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(MATRICOLA),
+)[*];"; expected "identifier"; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola),
+); [42001-200]
+2020-02-06 16:13:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ELABORATO( 
+  TEMA VARCHAR(100) NOT NULL,
+  ASSEGNAZIONE BOOLEAN NOT NULL,
+  DOCENTE VARCHAR(100) NOT NULL,
+  TIPOELABORATO VARCHAR(100) 
+  FOREIGN[*] KEY(DOCENTE) REFERENCES DOCENTE(ID)  PRIMARY KEY(TEMA)
+);"; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE Elaborato( 
+  Tema VARCHAR(100) NOT NULL,
+  Assegnazione BOOLEAN NOT NULL,
+  Docente VARCHAR(100) NOT NULL,
+  TipoElaborato VARCHAR(100) 
+  FOREIGN KEY(Docente) REFERENCES Docente(Id)  PRIMARY KEY(tema)
+); [42001-200]
+2020-02-06 16:13:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-06 16:15:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP STUDENTE[*]"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+drop Studente [42001-200]
+2020-02-06 16:15:59 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at main.InizializzazioneDB.main(InizializzazioneDB.java:13)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 20 more
+2020-02-06 16:16:23 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at main.InizializzazioneDB.main(InizializzazioneDB.java:13)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 20 more
+2020-02-06 16:17:54 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:83)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 28 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 22 more
+2020-02-06 16:18:03 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:83)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 28 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 22 more
+2020-02-06 16:18:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:87)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 16:18:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:87)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 16:21:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:87)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 16:21:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:87)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 16:22:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:87)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 17:37:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-06 17:38:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "DOCENTE" because "CONSTRAINT_B" depends on it; SQL statement:
+drop table docente [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-06 17:39:04 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:82)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 28 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 22 more
+2020-02-06 17:39:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 17:43:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 17:45:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 21:31:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 21:38:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "DOCENTE" because "CONSTRAINT_B" depends on it; SQL statement:
+drop table docente [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-06 21:39:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ELABORATO( 
+  TEMA VARCHAR(100) NOT NULL,
+  TIPOELABORATO VARCHAR(100), 
+  ASSEGNAZIONE BOOLEAN NOT NULL,
+  INSEGNAMENTO VARCHAR(100) NOT NULL  DOCENTE[*] VARCHAR(100) NOT NULL,
+  FOREIGN KEY(DOCENTE) REFERENCES DOCENTE(ID),  PRIMARY KEY(TEMA)
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE Elaborato( 
+  Tema VARCHAR(100) NOT NULL,
+  TipoElaborato VARCHAR(100), 
+  Assegnazione BOOLEAN NOT NULL,
+  Insegnamento VARCHAR(100) NOT NULL  Docente VARCHAR(100) NOT NULL,
+  FOREIGN KEY(Docente) REFERENCES Docente(Id),  PRIMARY KEY(tema)
+); [42001-200]
+2020-02-06 21:40:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-06 21:41:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 21:43:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE DOCENTE
+DROP[*] TABLE STUDENTE
+DROP TABLE ASSEGNAZIONERICHIESTE
+DROP TABLE STUDENTE"; SQL statement:
+drop table docente
+drop table studente
+drop table assegnazionerichieste
+drop table studente [42000-200]
+2020-02-06 21:44:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLE DOCENTE
+DROP[*] TABLE STUDENTE
+DROP TABLE ASSEGNAZIONERICHIESTE
+DROP TABLE ELABORATO"; SQL statement:
+drop table docente
+drop table studente
+drop table assegnazionerichieste
+drop table elaborato [42000-200]
+2020-02-06 21:44:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ASSEGNAZIONERICHIESTE" not found; SQL statement:
+drop table assegnazionerichieste [42102-200]
+2020-02-06 21:44:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLBLE[*] STUDENTE"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+drop tablBLE STUDENTE [42001-200]
+2020-02-06 21:44:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLBLE[*] ELABORATO"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+drop tablBLE ELABORATO [42001-200]
+2020-02-06 21:45:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 21:47:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:18)
+2020-02-06 21:50:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:15)
+2020-02-06 21:57:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:15)
+2020-02-06 22:02:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:15)
+2020-02-06 22:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "DOCENTE" because "CONSTRAINT_B" depends on it; SQL statement:
+DROP TABLE DOCENTE [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-06 22:07:59 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at main.InizializzazioneDB.main(InizializzazioneDB.java:13)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 20 more
+2020-02-06 22:08:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:15)
+2020-02-06 22:19:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "roberto" not found; SQL statement:
+INSERT INTO DOCENTE VALUES ("roberto","natella", 12, "101") [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Insert.prepare(Insert.java:327)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-06 22:19:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "roberto" not found; SQL statement:
+INSERT INTO DOCENTE VALUES ("roberto","natella", 12, "101") [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Insert.prepare(Insert.java:327)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1459)
+	at org.h2.server.web.WebApp.query(WebApp.java:1116)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1078)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1065)
+	at org.h2.server.web.WebThread.process(WebThread.java:178)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-06 22:33:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABBLE[*] STUDENTE"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP TABBLE STUDENTE [42001-200]
+2020-02-06 22:33:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP TABLESTUDENTE[*]"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP TABLESTUDENTE [42001-200]
+2020-02-06 22:34:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:15)
+2020-02-06 22:47:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:15)
+2020-02-06 23:21:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:14)
+2020-02-07 08:14:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:14)
+2020-02-07 08:32:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "RICHIESTEASSEGNAZIONE" not found; SQL statement:
+drop table richiesteassegnazione; [42102-200]
+2020-02-07 08:32:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ELABORATI" not found; SQL statement:
+drop table elaborati; [42102-200]
+2020-02-07 08:32:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:34:01 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at main.RimozioneDB.main(RimozioneDB.java:14)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 20 more
+2020-02-07 08:34:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.main.main(main.java:12)
+2020-02-07 08:35:33 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at main.RimozioneDB.main(RimozioneDB.java:14)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 20 more
+2020-02-07 08:35:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ELABORATO" not found; SQL statement:
+drop table elaborato; [42102-200]
+2020-02-07 08:36:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:36:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:36:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:37:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:37:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:37:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:37:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:38:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:39:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:39:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100) NOT NULL, 
+  Cognome VARCHAR(100) NOT NULL, 
+  Matricola VARCHAR(100) NOT NULL,
+  PREF1 VARCHAR(100) NOT NULL, 
+  PREF2 VARCHAR(100) NOT NULL, 
+  PREF3 VARCHAR(100) NOT NULL, 
+  CFU INT NOT NULL,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 08:41:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 08:49:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 08:50:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato; [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 08:51:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 08:51:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 09:02:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "TIPO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 09:06:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ASSEGNATO" not found; SQL statement:
+SELECT tema,Tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 09:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ASSEGNATO" not found; SQL statement:
+SELECT tema,Tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 09:08:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ASSEGNATO" not found; SQL statement:
+SELECT tema,Tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 09:08:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "ASSEGNATO" not found; SQL statement:
+SELECT tema,tipo,assegnato,insegnamento,docente FROM Elaborato [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:86)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+2020-02-07 09:09:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTI" not found; SQL statement:
+INSERT INTO Studenti VALUES (?, ?, ?, ?,?,?,?); [42102-200]
+2020-02-07 09:09:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTI" not found; SQL statement:
+INSERT INTO Studenti VALUES (?, ?, ?, ?,?,?,?); [42102-200]
+2020-02-07 09:09:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTI" not found; SQL statement:
+INSERT INTO Studenti VALUES (?, ?, ?, ?,?,?,?); [42102-200]
+2020-02-07 09:10:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'M' (STUDENTE: ""CFU"" INT NOT NULL)"; SQL statement:
+INSERT INTO Studente VALUES (?, ?, ?, ?,?,?,?); [22018-200]
+2020-02-07 09:10:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'M' (STUDENTE: ""CFU"" INT NOT NULL)"; SQL statement:
+INSERT INTO Studente VALUES (?, ?, ?, ?,?,?,?) [22018-200]
+2020-02-07 09:11:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO Elaborato VALUES (?, ?, ?,?); [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.elaboratoDAO.create(elaboratoDAO.java:19)
+	at control.GestioneElaborati.aggiungiElaborato(GestioneElaborati.java:28)
+	at main.Principale.main(Principale.java:18)
+2020-02-07 09:13:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#5" is not set; SQL statement:
+INSERT INTO Elaborato VALUES (?, ?, ?,?,?); [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:187)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at database.elaboratoDAO.create(elaboratoDAO.java:29)
+	at control.GestioneElaborati.aggiungiElaborato(GestioneElaborati.java:28)
+	at main.Principale.main(Principale.java:18)
+2020-02-07 09:18:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#5" is not set; SQL statement:
+INSERT INTO Elaborato VALUES (?, ?, ?,?,?); [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:187)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at database.elaboratoDAO.create(elaboratoDAO.java:29)
+	at control.GestioneElaborati.aggiungiElaborato(GestioneElaborati.java:28)
+	at main.Principale.main(Principale.java:18)
+2020-02-07 09:19:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "7" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at database.StudenteDAO.create(StudenteDAO.java:27)
+	at control.GestioneElaborati.aggiungiStudente(GestioneElaborati.java:35)
+	at main.Principale.main(Principale.java:16)
+2020-02-07 09:19:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "7" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at database.StudenteDAO.create(StudenteDAO.java:27)
+	at control.GestioneElaborati.aggiungiStudente(GestioneElaborati.java:35)
+	at main.Principale.main(Principale.java:16)
+2020-02-07 09:20:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "7" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at database.StudenteDAO.create(StudenteDAO.java:27)
+	at control.GestioneElaborati.aggiungiStudente(GestioneElaborati.java:35)
+	at main.Principale.main(Principale.java:16)
+2020-02-07 09:20:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "7" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at database.StudenteDAO.create(StudenteDAO.java:27)
+	at control.GestioneElaborati.aggiungiStudente(GestioneElaborati.java:35)
+	at main.Principale.main(Principale.java:16)
+2020-02-07 09:24:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "7" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at database.StudenteDAO.create(StudenteDAO.java:27)
+	at control.GestioneElaborati.aggiungiStudente(GestioneElaborati.java:35)
+	at main.Principale.main(Principale.java:16)
+2020-02-07 09:26:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "4" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:413)
+	at database.DocenteDAO.create(DocenteDAO.java:24)
+	at control.GestioneElaborati.aggiungiDocente(GestioneElaborati.java:41)
+	at main.Principale.main(Principale.java:17)
+2020-02-07 09:27:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#5" is not set; SQL statement:
+INSERT INTO Elaborato VALUES (?, ?, ?,?,?); [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:187)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at database.elaboratoDAO.create(elaboratoDAO.java:29)
+	at control.GestioneElaborati.aggiungiElaborato(GestioneElaborati.java:28)
+	at main.Principale.main(Principale.java:18)
+2020-02-07 09:28:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#5" is not set; SQL statement:
+INSERT INTO Elaborato VALUES (?, ?, ?,?,?); [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:187)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at database.elaboratoDAO.create(elaboratoDAO.java:29)
+	at control.GestioneElaborati.aggiungiElaborato(GestioneElaborati.java:28)
+	at main.Principale.main(Principale.java:18)
+2020-02-07 09:28:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#5" is not set; SQL statement:
+INSERT INTO Elaborato VALUES (?, ?, ?,?,?); [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:187)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at database.elaboratoDAO.create(elaboratoDAO.java:29)
+	at control.GestioneElaborati.aggiungiElaborato(GestioneElaborati.java:28)
+	at main.Principale.main(Principale.java:18)
+2020-02-07 09:29:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#5" is not set; SQL statement:
+INSERT INTO Elaborato VALUES (?, ?, ?,?,?); [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:187)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at database.elaboratoDAO.create(elaboratoDAO.java:29)
+	at control.GestioneElaborati.aggiungiElaborato(GestioneElaborati.java:28)
+	at main.Principale.main(Principale.java:18)
+2020-02-07 09:32:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#5" is not set; SQL statement:
+INSERT INTO Elaborato VALUES (?, ?, ?,?,?); [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:187)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at database.elaboratoDAO.create(elaboratoDAO.java:29)
+	at control.GestioneElaborati.aggiungiElaborato(GestioneElaborati.java:28)
+	at main.Principale.main(Principale.java:18)
+2020-02-07 09:33:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#5" is not set; SQL statement:
+INSERT INTO Elaborato VALUES (?, ?, ?,?,?); [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:187)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at database.elaboratoDAO.create(elaboratoDAO.java:29)
+	at control.GestioneElaborati.aggiungiElaborato(GestioneElaborati.java:28)
+	at main.Principale.main(Principale.java:18)
+2020-02-07 09:57:07 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:82)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 28 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 22 more
+2020-02-07 09:57:22 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:82)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 28 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 22 more
+2020-02-07 09:57:30 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:82)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 28 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 22 more
+2020-02-07 09:57:41 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at main.InizializzazioneDB.main(InizializzazioneDB.java:13)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 26 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 20 more
+2020-02-07 10:55:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO Studente VALUES (?, ?, ?, ?,? ,? ,?) [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at database.StudenteDAO.create(StudenteDAO.java:18)
+	at control.GestioneElaborati.aggiungiStudente(GestioneElaborati.java:35)
+	at main.Principale.main(Principale.java:17)
+2020-02-07 11:51:06 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at database.ConnessioneDB.getConnection(ConnessioneDB.java:18)
+	at database.elaboratoDAO.readAll(elaboratoDAO.java:82)
+	at control.GestioneElaborati.<init>(GestioneElaborati.java:14)
+	at main.Principale.main(Principale.java:12)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 28 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Maria/Desktop/Universita/Ingegneria Del Software/ESAME/GestioneElaborati.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 22 more
+2020-02-07 19:15:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100), 
+  Cognome VARCHAR(100), 
+  Matricola VARCHAR(100),
+  CFU INT,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 19:15:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE ELABORATO SET TIPO=?,ASSEGNATO=?, INSEGNAMENTO=?, DOCENTE=?, WHERE[*] TEMA=?;"; expected "identifier"; SQL statement:
+UPDATE Elaborato SET tipo=?,assegnato=?, insegnamento=?, docente=?, WHERE tema=?; [42001-200]
+2020-02-07 19:17:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE ELABORATO SET TIPO=?,ASSEGNATO=?, INSEGNAMENTO=?, DOCENTE=?, WHERE[*] TEMA=?;"; expected "identifier"; SQL statement:
+UPDATE Elaborato SET tipo=?,assegnato=?, insegnamento=?, docente=?, WHERE tema=?; [42001-200]
+2020-02-07 19:17:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ELABORATO" not found; SQL statement:
+drop table elaborato; [42102-200]
+2020-02-07 19:17:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100), 
+  Cognome VARCHAR(100), 
+  Matricola VARCHAR(100),
+  CFU INT,
+  PRIMARY KEY(Matricola)
+); [42101-200]
+2020-02-07 19:18:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE ELABORATO SET TIPO=?,ASSEGNATO=?, INSEGNAMENTO=?, DOCENTE=?, WHERE[*] TEMA=?;"; expected "identifier"; SQL statement:
+UPDATE Elaborato SET tipo=?,assegnato=?, insegnamento=?, docente=?, WHERE tema=?; [42001-200]
+2020-02-07 19:22:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE ELABORATO SET TIPO=?,ASSEGNATO=?, INSEGNAMENTO=?, DOCENTE=?, WHERE[*] TEMA=?;"; expected "identifier"; SQL statement:
+UPDATE Elaborato SET tipo=?,assegnato=?, insegnamento=?, docente=?, WHERE tema=?; [42001-200]
+2020-02-07 19:24:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE ELABORATO SET TIPO=?,ASSEGNATO=?, INSEGNAMENTO=?, DOCENTE=?, WHERE[*] TEMA=?;"; expected "identifier"; SQL statement:
+UPDATE Elaborato SET tipo=?,assegnato=?, insegnamento=?, docente=?, WHERE tema=?; [42001-200]
+2020-02-07 19:29:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "4" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:413)
+	at database.DocenteDAO.update(DocenteDAO.java:125)
+	at control.GestioneElaborati.assegnaElaborato(GestioneElaborati.java:59)
+	at main.Principale.main(Principale.java:40)
+2020-02-07 20:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "4" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:413)
+	at database.DocenteDAO.update(DocenteDAO.java:125)
+	at control.GestioneElaborati.assegnaElaborato(GestioneElaborati.java:59)
+	at main.Principale.main(Principale.java:40)
+2020-02-07 20:11:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "4" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:413)
+	at database.DocenteDAO.update(DocenteDAO.java:125)
+	at control.GestioneElaborati.assegnaElaborato(GestioneElaborati.java:59)
+	at main.Principale.main(Principale.java:40)
+2020-02-07 20:17:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET @INCREMENTO = 1 
+UPDATE[*] DOCENTE SET NOME=?,COGNOME=?,NUMELABORATI = NUMELABORATI + @INCREMENTO WHERE ID=?;"; SQL statement:
+SET @INCREMENTO = 1 
+UPDATE Docente SET Nome=?,cognome=?,numelaborati = numelaborati + @Incremento WHERE id=?; [42000-200]
+2020-02-07 20:20:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET @INCREMENTO = 1 
+UPDATE[*] DOCENTE SET NOME=?,COGNOME=?,NUMELABORATI = NUMELABORATI + @INCREMENTO WHERE ID=?;"; SQL statement:
+SET @INCREMENTO = 1 
+UPDATE Docente SET Nome=?,cognome=?,numelaborati = numelaborati + @Incremento WHERE id=?; [42000-200]
+2020-02-07 20:25:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET @INCREMENTO = 1 
+UPDATE[*] DOCENTE SET NOME=?, COGNOME=?, NUMELABORATI = NUMELABORATI + @INCREMENTO WHERE ID=?;"; SQL statement:
+SET @INCREMENTO = 1 
+UPDATE Docente SET Nome=?, cognome=?, numelaborati = numelaborati + @Incremento WHERE id=?; [42000-200]
+2020-02-07 20:26:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "4" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:413)
+	at database.DocenteDAO.update(DocenteDAO.java:126)
+	at control.GestioneElaborati.assegnaElaborato(GestioneElaborati.java:59)
+	at main.Principale.main(Principale.java:40)
+2020-02-08 15:01:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ELABORATO" not found; SQL statement:
+drop table elaborato; [42102-200]
+2020-02-08 17:56:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]""CREATE TABLE STUDENTE(  Nome VARCHAR(100),  Cognome VARCHAR(100),   Matricola VARCHAR(100),  CFU INT,  PRIMARY KEY(Matricola));"; SQL statement:
+"CREATE TABLE STUDENTE(  Nome VARCHAR(100),  Cognome VARCHAR(100),   Matricola VARCHAR(100),  CFU INT,  PRIMARY KEY(Matricola)); [42000-200]
+2020-02-08 17:56:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "DOCENTE" because "CONSTRAINT_B" depends on it; SQL statement:
+DROP TABLE STUDENTE; [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:50)
+	at org.h2.command.CommandList.update(CommandList.java:67)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at control.GestioneElaboratiTest.tearDownAfterClass(GestioneElaboratiTest.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Iterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+2020-02-08 18:05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DOCENTE" already exists; SQL statement:
+CREATE TABLE Docente( 
+  Nome VARCHAR(100),
+  Cognome VARCHAR(100),
+  Numelaborati INT,
+  Id VARCHAR(100),
+  PRIMARY KEY(Id)
+); [42101-200]
+2020-02-09 14:12:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENTE" already exists; SQL statement:
+CREATE TABLE STUDENTE( 
+  Nome VARCHAR(100), 
+  Cognome VARCHAR(100), 
+  Matricola VARCHAR(100),
+  CFU INT,
+  PRIMARY KEY(Matricola)
+); [42101-200]
